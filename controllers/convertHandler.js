@@ -56,8 +56,12 @@ function ConvertHandler() {
 
     let unit = input.match(/[a-zA-Z]+/);
     
-    if(unit && validUnits.includes(unit[0])) {
-      result = unit[0];
+    if(unit && validUnits.includes(unit[0].toLowerCase())) {
+      if(unit[0].toLowerCase() === 'l') {
+        result = 'L';
+      } else {
+        result = unit[0].toLowerCase();
+      }
     } else {
       result = 'invalid unit';
     }
