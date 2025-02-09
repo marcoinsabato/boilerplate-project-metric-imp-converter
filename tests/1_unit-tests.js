@@ -104,7 +104,7 @@ suite('Unit Tests', function(){
     test('convertHandler should correctly convert L to gal', function(done){
         let input = 1;
         let unit = 'L';
-        let expected = 0.264172;
+        let expected = 0.26417;
         assert.approximately(convertHandler.convert(input,unit), expected, 0.1);
         done();
     });
@@ -120,7 +120,7 @@ suite('Unit Tests', function(){
     test('convertHandler should correctly convert km to mi', function(done){
         let input = 1;
         let unit = 'km';
-        let expected = 0.621371;
+        let expected = 0.62137;
         assert.approximately(convertHandler.convert(input,unit), expected, 0.1);
         done();
     });
@@ -128,7 +128,7 @@ suite('Unit Tests', function(){
     test('convertHandler should correctly convert lbs to kg', function(done){
         let input = 1;
         let unit = 'lbs';
-        let expected = 0.453592;
+        let expected = 0.45359;
         assert.approximately(convertHandler.convert(input,unit), expected, 0.1);
         done();
     });

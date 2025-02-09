@@ -47,9 +47,7 @@ function ConvertHandler() {
       result = 1;
     }
 
-
-    
-    return result;
+    return Number(result);
   };
   
   this.getUnit = function(input) {
@@ -106,11 +104,11 @@ function ConvertHandler() {
         result = 'invalid unit';
     }
     
-    return result;
+    return Number(result.toFixed(5));
   };
   
   this.getString = function(initNum, initUnit, returnNum, returnUnit) {
-    return `${initNum} ${this.spellOutUnit(initUnit)} converts to ${returnNum.toFixed(5)} ${this.spellOutUnit(returnUnit)}`
+    return `${initNum} ${this.spellOutUnit(initUnit)} converts to ${returnNum} ${this.spellOutUnit(returnUnit)}`
   };
   
 }
