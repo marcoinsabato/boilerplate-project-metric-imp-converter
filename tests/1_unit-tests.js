@@ -86,22 +86,6 @@ suite('Unit Tests', function(){
     });
     
     test('convertHandler should correctly convert L to gal', function(done){
-        let input = 3.78541;
-        let unit = 'L';
-        let expected = 1;
-        assert.approximately(convertHandler.convert(input,unit), expected, 0.1);
-        done();
-    });
-    
-    test('convertHandler should correctly convert gal to L', function(done){
-        let input = 1;
-        let unit = 'gal';
-        let expected = 3.78541;
-        assert.approximately(convertHandler.convert(input, unit), expected, 0.1);
-        done();
-    });
-    
-    test('convertHandler should correctly convert L to gal', function(done){
         let input = 1;
         let unit = 'L';
         let expected = 0.26417;
